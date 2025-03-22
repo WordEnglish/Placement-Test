@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de Colocación de Inglés</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace al CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <div class="container bg-white rounded-lg shadow-md p-6">
+        <h1 class="text-2xl font-semibold mb-4 text-blue-600">Examen de Colocación de Inglés</h1>
+        <p class="mb-4">Selecciona la respuesta correcta para cada pregunta.</p>
+
+        <form id="quiz-form">
+        </form>
+
+        <button id="submit-btn" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Enviar respuestas
+        </button>
+
+        <div id="results" class="hidden mt-6 p-4 bg-gray-200 rounded-md">
+            <h2 class="text-xl font-semibold mb-2 text-green-600">Resultados</h2>
+            <p>Tu nivel de inglés es: <span id="nivel"></span></p>
+            <p>Respuestas correctas: <span id="correctas"></span></p>
+            <p>Respuestas incorrectas: <span id="incorrectas"></span></p>
+            <p>Puntuación: <span id="puntuacion"></span></p>
+        </div>
+        <div id="restart-quiz" class="hidden mt-4">
+            <button id="restart-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Reiniciar Examen
+            </button>
+        </div>
+    </div>
+
+    <!-- Enlace al JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
